@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px; /* Aumenta el padding */
+    background-color: rgb(24, 43, 31);
+    color: white;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.logo {
+    height: 60px; /* Aumenta la altura del logo */
+}
+
+.nav {
+    display: flex;
+    gap: 20px; /* Aumenta el espacio entre los enlaces */
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #007bff; /* Color del texto al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        background-color: rgb(24, 43, 31);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+    }
+
+    .nav.active {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger.active .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active .bar2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

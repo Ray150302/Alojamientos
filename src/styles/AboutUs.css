@@ -1,0 +1,18 @@
+.about-container {
+    max-width: 800px; /* Adjust based on your layout */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background for better readability */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .about-container h2, .about-container h3 {
+    color: rgb(24, 43, 31); /* Adjust the color as needed */
+    margin-bottom: 10px;
+  }
+  
+  .about-container p {
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Text color */
+  }
+  
