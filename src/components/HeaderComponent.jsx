@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; 
-import "../styles/header.css"; 
+import "../styles/styles.css"; 
 
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
@@ -32,12 +32,12 @@ export default function Header() {
                 <a className="link" onClick={() => handleNavigation('/', 'reserva-buscador')}>Reservaciones</a> 
                 <a className="link" onClick={() => handleNavigation('/', 'mision-vision')}>Misión y Visión</a> 
                 <a className="link" onClick={() => handleNavigation('/hospedaje')}>Hospedaje</a> 
-                <a href="#turismo-comunitario" className="link">Turismo Comunitario</a>
-                <a href="#paquetes" className="link">Paquetes</a>
-                <a href="#spa" className="link">Spa</a>
-                <a href="#restaurante" className="link">Restaurante</a>
-                <a href="#actividades" className="link">Actividades</a>
-                <a href="#contacto" className="link">Contacto</a>
+                <a className="link" onClick={() => handleNavigation('/experiencias')}>Turismo Comunitario</a> 
+                <a className="link" onClick={() => handleNavigation('/paquetes')}>Paquetes</a> 
+                <a className="link" onClick={() => handleNavigation('/spa')}>Spa</a> 
+                <a className="link" onClick={() => handleNavigation('/restaurante')}>Restaurante</a> 
+                <a className="link" onClick={() => handleNavigation('/actividades')}>Actividades</a> 
+                <a className="link" onClick={() => handleNavigation('/contacto')}>Contacto</a> 
             </nav>
             <div className={`hamburger ${menuActive ? 'active' : ''}`} onClick={toggleMenu}>
                 <div className="bar1"></div>

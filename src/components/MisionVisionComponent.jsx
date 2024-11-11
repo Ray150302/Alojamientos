@@ -1,6 +1,6 @@
 
 import React from "react";
-import "../styles/MisionVision.css"; // Archivo CSS para los estilos y animaciones
+import "../styles/styles.css"; 
 
 export default function MisionVision() {
     return (

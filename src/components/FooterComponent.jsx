@@ -1,7 +1,9 @@
+// Footer.js
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaFacebook, FaWhatsapp } from 'react-icons/fa'; // Importamos íconos de react-icons
-import '../styles/footer.css'; // Importamos el archivo CSS
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import '../styles/styles.css';
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -22,22 +24,22 @@ const Footer = () => {
                 {/* Logo y Navegación */}
                 <div className="logoSection">
                     <img 
-                        src="../../logo2.png" // Reemplaza con la URL de tu logo
+                        src="../../logo2.png"
                         alt="Tosepan Kali"
                         className="logo"
-                        onClick={() => handleNavigation('/')} // Añadido evento onClick
-                        style={{ cursor: 'pointer' }} // Añadido estilo para indicar que es clicable
+                        onClick={() => handleNavigation('/')}
+                        style={{ cursor: 'pointer' }}
                     />
                     <nav className="navLinks">
-                        <a className="link" onClick={() => handleNavigation('/', 'reserva-buscador')}>RESERVAR</a> {/* Navega a la sección ReservaBusqueda */}
-                        <a className="link" onClick={() => handleNavigation('/', 'mision-vision')}>MISIÓN / VISIÓN</a> {/* Navega a la sección MisionVision */}
-                        <a className="link" onClick={() => handleNavigation('/hospedaje')}>HOSPEDAJE</a> {/* Navega a la ruta /hospedaje */}
-                        <a className="link" href="#turismo-comunitario">TURISMO COMUNITARIO</a>
-                        <a className="link" href="#paquetes">PAQUETES</a>
-                        <a className="link" href="#spa">SPA</a>
-                        <a className="link" href="#restaurante">RESTAURANTE</a>
-                        <a className="link" href="#actividades">ACTIVIDADES</a>
-                        <a className="link" href="#contacto">UBICACIÓN / CONTACTO</a>
+                    <a className="link" onClick={() => handleNavigation('/', 'reserva-buscador')}>Reservaciones</a> 
+                <a className="link" onClick={() => handleNavigation('/', 'mision-vision')}>Misión y Visión</a> 
+                <a className="link" onClick={() => handleNavigation('/hospedaje')}>Hospedaje</a> 
+                <a className="link" onClick={() => handleNavigation('/experiencias')}>Turismo Comunitario</a> 
+                <a className="link" onClick={() => handleNavigation('/paquetes')}>Paquetes</a> 
+                <a className="link" onClick={() => handleNavigation('/spa')}>Spa</a> 
+                <a className="link" onClick={() => handleNavigation('/restaurante')}>Restaurante</a> 
+                <a className="link" onClick={() => handleNavigation('/actividades')}>Actividades</a> 
+                <a className="link" onClick={() => handleNavigation('/contacto')}>Contacto</a> 
                     </nav>
                 </div>
                 
@@ -64,8 +66,8 @@ const Footer = () => {
                     <h4 className="sectionTitle">Ubicación</h4>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.315284123456!2d-97.5304274!3d20.0305225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da8e80fdb43795:0x6528580bb97c9aaa!2sTosepan%20Kali!5e0!3m2!1ses!2smx!4v1698781234567!5m2!1ses!2smx&markers=color:red%7Clabel:C%7C20.0305225,-97.5304274"
-                        width="600"
-                        height="400"
+                        width="300" // Ajusta el ancho
+                        height="200" // Ajusta el alto
                         className="map"
                         allowFullScreen=""
                         loading="lazy"
@@ -74,11 +76,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footerBottom">
-                <p>2024 © Todos los derechos reservados. | <a href="/privacy-policy" className="privacyLink">Politica de privacidad</a></p>
+                <p>2024 © Todos los derechos reservados. | <a href="/privacy-policy" className="privacyLink">Política de privacidad</a></p>
                 <p>By ITST.</p>
             </div>
         </footer>
-        
     );
 };
 

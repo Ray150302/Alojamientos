@@ -1,9 +1,9 @@
-import Header from "../components/header"; // Importa el componente Header
-import MisionVision from "../components/MisionVision"; // Importa el componente MisionVision
-import AboutUs from "../components/AboutUs"; // Importa el componente AboutUs
-import ImageCarousel from "../components/ImageCarousel"; // Importa el componente ImageCarousel
-import Footer from "../components/footer"; // Importa el componente Footer
-import ReservaBusqueda from "../components/ReservaBuscador"; // Importa el componente ReservaBusqueda
+import Header from "../components/HeaderComponent"; // Importa el componente Header
+import MisionVision from "../components/MisionVisionComponent"; // Importa el componente MisionVision
+import AboutUs from "../components/AcercaDeComponent"; // Importa el componente AboutUs
+import ImageCarousel from "../components/ImageCarouselComponent"; // Importa el componente ImageCarousel
+import Footer from "../components/FooterComponent"; // Importa el componente Footer
+import ReservaBusqueda from "../components/ReservacionBusquedaComponent"; // Importa el componente ReservaBusqueda
 
 const images = [
     'https://firebasestorage.googleapis.com/v0/b/alojamientospue.appspot.com/o/Carrusel%2Fcarrusel1.jpg?alt=media&token=2a90b20e-43f6-4b26-acfb-f56d45bc4c91',

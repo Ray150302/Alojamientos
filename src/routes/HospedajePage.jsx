@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/header";
-import ImageCarousel from "../components/ImageCarousel";
-import Footer from "../components/footer";
-import ImageCard from "../components/ImageCard";
+import Header from "../components/HeaderComponent";
+import ImageCarousel from "../components/ImageCarouselComponent";
+import Footer from "../components/FooterComponent";
+import ImageCard from "../components/ImageCardComponent";
 
 const images = [
     'https://firebasestorage.googleapis.com/v0/b/alojamientospue.appspot.com/o/Carrusel%2Fcarrusel1.jpg?alt=media&token=2a90b20e-43f6-4b26-acfb-f56d45bc4c91',
@@ -61,6 +61,7 @@ export default function Hospedaje() {
                             title={option.title}
                             images={option.images}
                             text={option.text}
+                            isImageLeft={index % 2 === 0}
                         />
                     ))}
                 </div>
